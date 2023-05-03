@@ -1,0 +1,200 @@
+*,
+html body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+}
+
+header {
+  color: rgb(255, 255, 255);
+  background-color: rgb(158, 199, 246);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+li {
+  list-style-type: none;
+  padding: 10px;
+}
+
+li a:hover {
+  color: rgb(20, 14, 4);
+  transform: rotate(2deg);
+}
+
+li a {
+  transition: all 0.5s ease 0s;
+  display: inline-block;
+}
+
+a {
+  color: antiquewhite;
+  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+  padding: 20px;
+}
+
+.logo {
+  margin-right: auto;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: all 0.5s ease 0s;
+}
+
+.logo:hover {
+  color: rgb(0, 0, 0);
+  transform: rotate(2deg);
+}
+
+.btn-me {
+  margin-right: 10px;
+  border: none;
+  font-size: 20px;
+  padding: 6px 12px;
+  background-color: rgb(221, 177, 44);
+  color: azure;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 70px 0;
+}
+
+.conten-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.deskripsi {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.img-opik {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  padding: 10px;
+}
+
+.paralax {
+  background-image: url("/gambar/IMG_20220504_125208.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.tentang {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: aquamarine;
+  color: rgb(123, 123, 123);
+  padding: 20px;
+  font-size: 20px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.cards span {
+  color: brown;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.card-item {
+  background-color: rgb(167, 188, 181);
+  color: bisque;
+  border-radius: 9px;
+  padding: 20px;
+  width: 25%;
+  box-shadow: 2px 2px 2px 2px rgb(18, 19, 20);
+  text-align: center;
+}
+
+.icon {
+  width: 75px;
+  height: 75px;
+  margin: 10px;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card-deskripsi {
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: rgb(254, 254, 254);
+  color: rgb(230, 230, 230);
+}
+
+@media screen and (max-width: 500px) {
+  .cards {
+    flex-direction: column;
+    gap: 0;
+  }
+  .card-item {
+    width: 100%;
+  }
+  .container {
+    padding: 0;
+    max-width: 100%;
+  }
+  .img-opik {
+    padding: 0;
+  }
+  .conten-1 {
+    margin-top: 20px;
+  }
+  nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: antiquewhite;
+    z-index: 9;
+  }
+  footer {
+    margin-bottom: 70px;
+  }
+}

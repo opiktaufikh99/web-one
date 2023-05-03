@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Opik Taufik H</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1 class="logo">OTH</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">home</a></li>
+          <li><a href="#what">what</a></li>
+          <li><a onclick="instag">Instagram</a></li>
+        </ul>
+      </nav>
+      <button class="btn-me">Follow Me</button>
+    </header>
+    <div class="container">
+      <div class="conten-1" id="home">
+        <p class="title">Opik Taufik H</p>
+        <p class="deskripsi">Manajeman Informatika</p>
+        <img src="gambar/IMG_20211024_104358.jpg" alt="opik Taufik hidayatullah" class="img-opik" />
+      </div>
+    </div>
+    <div class="paralax">
+      <div class="tentang">
+        <p>Saya adalah mahasisawa Manajeman Informatika</p>
+        <p>Belajar Ngoding</p>
+        <div class="mt-10">
+          <button class="btn-me" onclick="wa">Mari Belajar</button>
+        </div>
+      </div>
+      <div class="container">
+        <div class="cards" id="what">
+          <div class="card-item">
+            <img src="/icon/24-hours.png" alt="waktu" class="icon" />
+            <p class="card-title">Waktu</p>
+            <p class="card-deskripsi">Mari kita gunakan waktu sebaik mungkin sebelum<span>Waktu itu habis</span></p>
+          </div>
+          <div class="card-item">
+            <img src="/icon/hot-deal.png" alt="sepakat" class="icon" />
+            <p class="card-title">Keputusan Tepat</p>
+            <p class="card-deskripsi">Keputusan tepat adalah pemikiran orang cermat yang pasti<span>dia hebat</span></p>
+          </div>
+          <div class="card-item">
+            <img src="/icon/rating.png" alt="pesan" class="icon" />
+            <p class="card-title">Keritik dan saran</p>
+            <p class="card-deskripsi">Adalah sebuah pemicu agar kita bisa lebih <span>baik lagi kedepannya</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p class="title">@opik taufik hidayatullah</p>
+    </footer>
+    <script>
+      function instag() {
+        window.location.href = "https://instagram.com/@opik_taufik_hidayatullah";
+      }
+
+      function wa() {
+        window.location.href = "https://wa.me/9090909";
+      }
+    </script>
+  </body>
+</html>
